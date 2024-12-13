@@ -4,6 +4,7 @@ import MealComponent from './components/MealComponent'
 import CocktailComponent from './components/CocktailComponent'
 import PotterComponent from './components/PotterComponent'
 import BankComponent from './components/BankComponent'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/meals" element={<MealComponent />} />
         <Route path="/cocktails" element={<CocktailComponent />} />
